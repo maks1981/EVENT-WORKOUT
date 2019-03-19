@@ -1,0 +1,40 @@
+
+
+// EVENT LISTENER WORKOUT
+
+var button = document.querySelector('.button');
+
+function click1(){
+    console.log('clicked me!')
+}
+function click2(){
+    console.log('clicked me too!');
+    // button.removeEventListener('click',click1)
+}
+button.addEventListener('click',click1)
+button.addEventListener('click',click2)
+
+function showPopup(){
+    alert('hello i am here!')
+}
+document.addEventListener('click',showPopup)
+
+
+
+
+// button.onclick = function(){
+//     console.log('hello, you clicked me :)')
+// }
+
+// button.onmouseover = function(){
+//     console.log('mouse over!')
+// }
+// button.addEventListener('mouseover', function(event){
+//     event.target.style.color = 'red';
+//     setTimeout(function(){
+//         event.target.style.color = '';
+//         console.log('hey hey')
+//     }, 500);
+// }, true);
+
+
